@@ -51,14 +51,14 @@ The system uses a strict Tolerance Threshold of 0.5.
 
 ## III - Installation & Setup Guide
 
-**Note:** This project requires Python 3.11.9.
+**Note:** This project requires Python 3.11.
 
 ### Step 1: Install Dependencies
 
 Ensure you have the following installed:
 
   - Git
-  - Python 3.11.9
+  - Python 3.11
 
 ### Step 2: Configure PowerShell
 
