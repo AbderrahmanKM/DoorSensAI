@@ -78,25 +78,52 @@ mathematical trade-off between:
 2.  Usability (Recall): Ensuring residents are recognized even in varying
     lighting conditions.
 
-III- Installation & Deployment
+III- Installation & Setup Guide
 
-Prerequisites
+**Note:** This project requires **Python 3.11.x** (specifically tested on 3.11.9). 
 
-  - Python 3.8+
-  - cmake (required for face_recognition library)
-  - A functional webcam or imaging sensor
+Follow these steps exactly to run the project.
 
-Setup
+1. Install Dependencies (If not already installed)
 
-1.  Clone the repository:
-    git clone https://github.com/AbderrahmanKM/DoorSense-AI.git
-    cd DoorSense-AI
-2.  Install dependencies:
-    pip install Flask opencv-python face-recognition numpy
-3.  Initialize the system:
-    python app.py
+  - Git
+  - Python 3.11.9
 
-The dashboard will be available at http://localhost:5000.
+2. Configure PowerShell
+
+Open PowerShell as Administrator and run:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+
+3. Clone and Setup Environment
+
+Open a standard PowerShell window and run:
+
+- Clone the repository
+git clone https://github.com/AbderrahmanKM/DoorSensAI.git
+cd DoorSensAI
+
+- Create Virtual Environment using Python 3.11
+py -3.11 -m venv venv
+
+- Activate Virtual Environment
+.\venv\Scripts\activate
+
+- Upgrade Pip
+python -m pip install --upgrade pip
+
+4. Install Requirements
+
+pip install -r requirements.txt
+
+
+- Launch the Application
+python app.py
+
+Access the dashboard at: http://127.0.0.1:5000
+
+**Note:** If you trigger a knock and do not receive an immediate notification, please allow a few seconds for the camera hardware to initialize and the AI models to load into memory. Once the system is fully active, subsequent facial captures and identification results will be processed instantly. 
+
 
 IV- The Engineering Team
 
