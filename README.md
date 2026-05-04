@@ -34,7 +34,6 @@ Powered by the **HOG (Histogram of Oriented Gradients)** model and deep residual
 
 ### Face Extraction Logic
 ```python
-# The expansion logic ensures the AI model sees the full context of the face
 margin_y = int(face_height * expand_ratio)
 new_t = max(0, t - margin_y)
 new_b = min(img_height, b + margin_y)
@@ -52,7 +51,7 @@ The system uses a strict Tolerance Threshold of 0.5.
 
 ## III - Installation & Setup Guide
 
-* Note: * This project requires Python 3.11.9.
+**Note:** This project requires Python 3.11.9.
 
 ### Step 1: Install Dependencies
 
@@ -93,7 +92,7 @@ python app.py
 
 Access Dashboard: http://127.0.0.1:5000
 
-* Note: * System Activation: If you knock and see no notification, wait a few
+**Note:** System Activation: If you knock and see no notification, wait a few
 seconds for the camera hardware to initialize and AI models to load. Captures
 will be instant thereafter.
 
