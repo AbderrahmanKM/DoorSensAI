@@ -64,7 +64,9 @@ Ensure you have the following installed:
 
 Open PowerShell as Administrator and run:
 
+```python
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+```
 
 ### Step 3: Clone & Environment Setup
 
