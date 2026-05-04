@@ -52,8 +52,7 @@ The system uses a strict Tolerance Threshold of 0.5.
 
 ## III - Installation & Setup Guide
 
-[!CAUTION] Requirement: This project requires Python 3.11.9. Higher versions
-(3.12+) are currently unsupported due to legacy library dependencies.
+* Note: * This project requires Python 3.11.9.
 
 ### Step 1: Install Dependencies
 
@@ -94,7 +93,7 @@ python app.py
 
 Access Dashboard: http://127.0.0.1:5000
 
-[!NOTE] System Activation: If you knock and see no notification, wait a few
+* Note: * System Activation: If you knock and see no notification, wait a few
 seconds for the camera hardware to initialize and AI models to load. Captures
 will be instant thereafter.
 
