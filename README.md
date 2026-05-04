@@ -103,7 +103,7 @@ IV- The Engineering Team
 This project was developed through the collaborative effort of:
   - Abderrahman El Kourrami
   - Ouail Tahiri El Alaoui
-  - Labhala Samia
+  - Labhalla Samia
   - Babaida Narjis
   - Zougui Sabir
 
