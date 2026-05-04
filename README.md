@@ -5,7 +5,7 @@
 
 ---
 
-## 🛰️ I - System Architecture
+## I - System Architecture
 
 The project is built on a modular Python architecture consisting of four critical layers:
 
@@ -30,76 +30,83 @@ Powered by the **HOG (Histogram of Oriented Gradients)** model and deep residual
 
 ---
 
-## 🧪 II - Technical Deep Dive
+## II - Technical Deep Dive
 
-### 📐 Face Extraction Logic
+### Face Extraction Logic
 ```python
 # The expansion logic ensures the AI model sees the full context of the face
 margin_y = int(face_height * expand_ratio)
 new_t = max(0, t - margin_y)
 new_b = min(img_height, b + margin_y)
+```
 
 Effect: Significantly reduces the False Rejection Rate (FRR) by keeping the
 bounding box robust during movement.
 
-⚖️ Identification Heuristics
+### Identification Heuristics
 
 The system uses a strict Tolerance Threshold of 0.5.
 
 1.  Security (Precision): High barrier to prevent "Stranger-as-Resident" errors.
 2.  Usability (Recall): Maintains recognition under varying lighting conditions.
 
-⚙️ III - Installation & Setup Guide
+## III - Installation & Setup Guide
 
 [!CAUTION] Requirement: This project requires Python 3.11.9. Higher versions
 (3.12+) are currently unsupported due to legacy library dependencies.
 
-🛠️ Step 1: Install Dependencies
+### Step 1: Install Dependencies
 
 Ensure you have the following installed:
 
   - Git
   - Python 3.11.9
 
-🛡️ Step 2: Configure PowerShell
+### Step 2: Configure PowerShell
 
 Open PowerShell as Administrator and run:
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
-📂 Step 3: Clone & Environment Setup
+### Step 3: Clone & Environment Setup
 
 # Clone the repository
+```python
 git clone https://github.com/AbderrahmanKM/DoorSensAI.git
 cd DoorSensAI
-
+```
 # Create and Activate Virtual Environment
+```python
 py -3.11 -m venv venv
 .\venv\Scripts\activate
+```
 
 # Upgrade Pip and Install Libraries
+```
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
 
-🚀 Step 4: Launch
-
+Step 4: Launch
+```python
 python app.py
+```
 
-📍 Access Dashboard: http://127.0.0.1:5000
+Access Dashboard: http://127.0.0.1:5000
 
 [!NOTE] System Activation: If you knock and see no notification, wait a few
 seconds for the camera hardware to initialize and AI models to load. Captures
 will be instant thereafter.
 
-👥 IV - The Engineering Team
+## IV - The Engineering Team
 
-Collaboratively developed by:
+### Collaboratively developed by:
 
-  - 👤 Abderrahman El Kourrami
-  - 👤 Ouail Tahiri El Alaoui
-  - 👤 Labhalla Samia
-  - 👤 Babaida Narjis
-  - 👤 Zougui Sabir
+  - Abderrahman El Kourrami
+  - Ouail Tahiri El Alaoui
+  - Labhalla Samia
+  - Babaida Narjis
+  - Zougui Sabir
 
 © 2026 DoorSense AI Project. Developed for the Rabat International Science
 Festival.
