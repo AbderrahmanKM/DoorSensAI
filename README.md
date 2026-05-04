@@ -1,14 +1,5 @@
-To make a README "clearer and with colors" on GitHub, you use Markdown emojis,
-Code Blocks, Shields (badges), and HTML tags like <details> or <kbd>.
-
-Here is the upgraded version of your README. Copy and paste the code below
-directly into your README.md file:
-
 # 🚪 DoorSense AI: Intelligent Visitor Identification
 
-[![Python Version](https://img.shields.io/badge/python-3.11.9-blue.svg)](https://www.python.org/downloads/release/python-3119/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Framework: Flask](https://img.shields.io/badge/Framework-Flask-lightgrey.svg)](https://flask.palletsprojects.com/)
 
 **DoorSense AI** is a sophisticated visitor management system that integrates **Computer Vision**, **Deep Learning**, and **Structured Data Management** to automate home security. It provides an end-to-end pipeline: from raw camera buffer acquisition to facial feature encoding and real-time database cross-referencing.
 
@@ -112,10 +103,3 @@ Collaboratively developed by:
 
 © 2026 DoorSense AI Project. Developed for the Rabat International Science
 Festival.
-
-
-### Why this is better:
-1.  **Badges:** The blue and yellow badges at the top make the project look like professional software.
-2.  **Alert Blocks:** I used GitHub's "Alert" syntax (`> [!CAUTION]` and `> [!NOTE]`). On GitHub, these will appear in **Red** and **Blue** boxes to warn the user about the Python version.
-3.  **Emojis:** Icons like 📡, 🧪, and 🚀 help the eye scan the sections quickly.
-4.  **Formatting:** I used bold text and numbered lists to separate the concepts from the instructions.
