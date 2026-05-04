@@ -73,17 +73,23 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 ### Clone the repository
 ```python
 git clone https://github.com/AbderrahmanKM/DoorSensAI.git
+```
+```python
 cd DoorSensAI
 ```
 ### Create and Activate Virtual Environment
 ```python
 py -3.11 -m venv venv
+```
+```python
 .\venv\Scripts\activate
 ```
 
 ##v Upgrade Pip and Install Libraries
 ```
 python -m pip install --upgrade pip
+```
+```python
 pip install -r requirements.txt
 ```
 
