@@ -100,16 +100,21 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 Open a standard PowerShell window and run:
 
 - Clone the repository
+  
 git clone https://github.com/AbderrahmanKM/DoorSensAI.git
+
 cd DoorSensAI
 
 - Create Virtual Environment using Python 3.11
+
 py -3.11 -m venv venv
 
 - Activate Virtual Environment
+
 .\venv\Scripts\activate
 
 - Upgrade Pip
+
 python -m pip install --upgrade pip
 
 4. Install Requirements
@@ -118,6 +123,7 @@ pip install -r requirements.txt
 
 
 - Launch the Application
+
 python app.py
 
 Access the dashboard at: http://127.0.0.1:5000
